@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="style-project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <section>
+        <h2 id="text"><span></span><br>My Projects</h2>
+        <img src="./assets-new/bird1.png" id="bird1">
+        <img src="./assets-new/bird2.png" id="bird2">
+        <img src="./assets-new/forest.png" id="forest">
+        <a href="#sec" id="btn">Explore</a>
+        <img src="./assets-new/rocks.png" id="rocks">
+        <img src="./assets-new/water.png" id="water">
+    </section>
+
+    <script>
+        let text = document.getElementById("text");
+        let bird1 = document.getElementById("bird1");
+        let bird2 = document.getElementById("bird2");
+        let btn = document.getElementById("btn");
+        let forest = document.getElementById("forest");
+        let rocks = document.getElementById("rocks");
+        let water = document.getElementById("water");
+
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            text.style.top = 65 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+        });
+    </script>
+    <!-- ---------------------------------------------- -->
+    <div class="body-new">
+        <div class="navigation" id="sec">
+            <ul>
+                <li class="list active" data-color="#094b65">
+                    <a href="./web.htm" target="_blank">
+                        <span class="icon"><i class="fa fa-html5" aria-hidden="true"></i></span>
+                        <span class="title">Web Development</span>
+                    </a>
+                </li>
+                <li class="list" data-color="#3c40c6">
+                    <a href="./android.htm" target="_blank">
+                        <span class="icon"><i class="fa fa-android" aria-hidden="true"></i></span>
+                        <span class="title">Android Development</span>
+                    </a>
+                </li>
+                <li class="list" data-color="#05c46b">
+                    <a href="./game.htm" target="_blank">
+                        <span class="icon"><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+                        <span class="title">Game Development</span>
+                    </a>
+                </li>
+                <li class="list" data-color="#0fbcf9">
+                    <a href="https://auth.geeksforgeeks.org/user/aftershock/practice/" target="_blank">
+                        <span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span>
+                        <span class="title">DS & Algorithms</span>
+                    </a>
+                </li>
+                <li class="list" data-color="#ffa801">
+                    <a href="https://www.codechef.com/users/aftershock007" target="_blank">
+                        <span class="icon"><i class="fa fa-codiepie" aria-hidden="true"></i></span>
+                        <span class="title">Competetive Coding</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let list = document.querySelectorAll('.list');
+        for (let i = 0; i < list.length; i++) {
+            list[i].onmouseover = function () {
+                let j = 0;
+                while (j < list.length) {
+                    list[j++].className = 'list';
+                }
+                list[i].className = 'list active';
+            }
+        }
+        list.forEach(elements => {
+            elements.addEventListener("mouseenter", function (event) {
+                let bg = document.querySelector('.body-new');
+                let color = event.target.getAttribute('data-color');
+                bg.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+
+</html>

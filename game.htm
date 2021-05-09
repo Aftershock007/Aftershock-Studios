@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Projects</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link rel="stylesheet" href="./style-game.css">
+    <script>
+        function delay(URL) {
+            setTimeout(function () {
+                window.location = URL;
+            }, 2000);
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./assets-game/Game-Video.mp4" autoplay muted loop class="active"></video>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active location">
+                        <h2 class="aft-std-h2" id="aft-std">Jungle Runner</h2>
+                        <p class="aft-std-p"> Jungle is the first game I have created in Unity. It is a infine running
+                            2D platformer game and thr basic principal is to collect the coins. <br> <br>
+                            Click the given link to download the Jungle Runner game and enjoy it as much as you can.
+                            <br>
+                            <a href="https://drive.google.com/file/d/1ZhkaegRFlOsxvPDfLJ8T5hdBvM3WImtX/view?usp=sharing "
+                                target="_blank" class="game-link">Click Here</a>
+                            <!-- -------------------------------------------------------------- -->
+                            <div class="body-1">
+                                <button class="button">
+                                    <a href="javascript:delay('./Stick Hero/index.htm')" class="default"
+                                        id="new-btn">Surprise</a>
+                                    <a class=" success"></a>
+                                    <div class="left"></div>
+                                    <div class="right"></div>
+                                </button>
+                            </div>
+                            <!-- -------------------------------------------------------------- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./scripted.js"></script>
+</body>
+
+</html>

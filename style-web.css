@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+section {
+    background: #111;
+    min-height: 100vh;
+}
+
+section .bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .bannerVideo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+section .bannerVideo video.active {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(5px) grayscale(10%);
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.container .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.bannerText {
+    position: relative;
+    max-width: 700px;
+}
+
+.location {
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+.location.active {
+    display: initial;
+}
+
+.aft-std-h2 {
+    color: #fff;
+    font-size: 6em;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+.aft-std-p {
+    color: #111;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#aft-std {
+    color: #4F69C6;
+}
+
+#rand-col {
+    color: #f6e8e1;
+}
+
+#rd-str {
+    color: #ff007f;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.controls li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffb6c1;
+    cursor: pointer;
+}
+
+.controls li:hover {
+    background: skyblue;
+}
+
+/*-------------------------Media-Query-------------------------*/
+@media (max-width:991px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container::before {
+        width: 60%;
+    }
+
+    .aft-std-h2 {
+        font-size: 3em;
+    }
+
+    .container .content .bannerText {
+        text-align: center;
+    }
+
+    #slideShow {
+        height: 120%;
+        top: -100px;
+    }
+}
+
+#video-2 {
+    height: 115%;
+    top: -100px;
+    /* top: -5px; 
+    max-height: 100%;
+    overflow: hidden;*/
+}
+
+.git-link-1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.git-link-2 {
+    color: tomato;
+    text-decoration: none;
+}

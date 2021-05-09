@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/alphacentauri');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto',
+    sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+  background: #000;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  filter: brightness(0.7);
+}
+
+.rock1 {
+  position: absolute !important;
+  left: 10vw !important;
+  top: 20vh !important;
+}
+
+.rock1 img {
+  width: 40%;
+  filter: brightness(0.5);
+}
+
+.text h1 {
+  font-family: "AlphaCentauri" !important;
+  font-size: 5vw;
+  color: #fff;
+  letter-spacing: 20px;
+  position: absolute;
+  top: 34vh;
+  left: 35vw;
+}
+
+.earth img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 39vw;
+  top: 25vh;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+}
+
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -20px;
+  top: 20vh !important;
+  filter: brightness(0.8);
+}
+
+.fore {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+}
+
+.fore img {
+  width: 400px;
+  height: 110vh;
+  z-index: 3;
+  filter: brightness(0.5);
+}
+
+/* SWIPER */
+
+#sectiontwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.rockbg1 {
+  position: absolute;
+  transform: scale(0.2);
+  filter: brightness(0.2);
+  top: 20vh;
+  left: 0;
+  z-index: 1;
+}
+
+.planet-links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.planet-links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+
+.planet-links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  transition-delay: 0.5s;
+}
+
+.swiper-slide {
+  height: 400px !important;
+  width: 90% !important;
+  background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url("images/mercury.png");
+}
+
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url("images/venus.png");
+}
+
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url("images/earth1.png");
+}
+
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url("images/mars.png");
+}
+
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url("images/jupiter.png");
+}
+
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url("images/saturn.png");
+}
+
+.swiper-slide:nth-child(7) .slide-img {
+  background-image: url("images/uranus.png");
+}
+
+.swiper-slide:nth-child(8) .slide-img {
+  background-image: url("images/neptune.png");
+}
+
+.slide-img {
+  background-position: "center";
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 30%;
+  height: 100%;
+}
+
+.slide-number {
+  position: absolute;
+  top: -30px;
+  left: 30%;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slide-number p {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+}
+
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-number p .short-text {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+  display: none;
+}
+
+.slide-detail {
+  position: absolute;
+  top: 180px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  /* overflow: hidden; */
+  display: flex;
+}
+
+.html-img {
+  position: relative;
+  width: 20vw;
+  height: 10vw;
+}
+
+#kt-img {
+  left: 40px;
+  top: -20px;
+}
+
+#ill-img {
+  left: 40px;
+  top: -20px;
+}
+
+#fig-img {
+  left: 20px;
+  top: -20px;
+}
+
+#py-img {
+  left: 10px;
+  top: -20px;
+}
+
+.progress {
+  border-radius: 20px;
+  height: 30px;
+  width: 500px;
+  z-index: 1000;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 0;
+  transition: 10s ease;
+}
+
+.slide-detail-facts {
+  position: absolute;
+  top: 240px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.slide-detail-facts div {
+  display: flex;
+  position: relative;
+}
+
+.slide-detail-facts div h5 {
+  margin-right: 20px;
+}
+
+.slide-text {
+  position: absolute;
+  top: -150px;
+  left: 22%;
+  z-index: 9;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  opacity: 0.1 !important;
+}
+
+.slide-text h4 {
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+}
+
+.slide-text h4 span {
+  position: absolute;
+}
+
+.swipe {
+  display: none;
+  color: #fff;
+}
+
+/* ------------------------Media-query------------------------ */
+@media (max-width :500px) {
+  .rockbg1 {
+    display: none;
+  }
+
+  .planet-links {
+    display: none;
+  }
+
+  #scene {
+    object-fit: cover;
+  }
+
+  .fore {
+    display: none;
+  }
+
+  .bg img {
+    width: 90vw;
+    height: 90vh;
+    filter: brightness(0.7);
+  }
+
+  .text h1 {
+    font-size: 3.5em;
+    top: 34vh;
+    left: 22vw;
+  }
+
+  .earth img {
+    left: 18vw;
+    top: 22vh;
+  }
+
+  .slide-number p {
+    left: 60px;
+  }
+
+  .slide-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .slide-text {
+    top: -150px;
+    left: 18%;
+    width: 300px;
+    height: 500px;
+  }
+
+  .slide-number p .long-text {
+    display: none;
+  }
+
+  .short-text {
+    display: inline-block;
+    font-size: 40px;
+    font-family: "AlphaCentauri" !important;
+    color: #fff;
+    position: relative;
+    left: 50px;
+  }
+
+  .k-num {
+    left: 50px;
+  }
+
+  .k-text {
+    top: 20px;
+    left: 20px;
+  }
+
+  .illus {
+    font-size: 30px;
+    top: 22px;
+  }
+
+  .illus-num {
+    top: -5px;
+    left: 30px;
+  }
+
+  /*----------------*/
+  .html-img {
+    position: relative;
+    width: 50vw;
+    height: 25vw;
+  }
+
+  #kt-img {
+    left: 10px;
+    top: 20px;
+  }
+
+  #ill-img {
+    left: 10px;
+    top: -10px;
+  }
+
+  #fig-img {
+    left: 10px;
+    top: -15px;
+  }
+
+  #py-img {
+    left: 20px;
+    top: -10px;
+  }
+
+  .swipe {
+    display: inline-block;
+    margin-top: 52%;
+    margin-left: 40%;
+    color: #fff;
+    font-size: 1.3em;
+  }
+}
