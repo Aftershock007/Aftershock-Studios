@@ -9,8 +9,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* font-family: 'Roboto',
-    sans-serif; */
   list-style: none;
   box-sizing: border-box;
   background: #000;
@@ -146,35 +144,35 @@ section {
 }
 
 .swiper-slide:nth-child(1) .slide-img {
-  background-image: url("images/mercury.png");
+  background-image: url("mercury.png");
 }
 
 .swiper-slide:nth-child(2) .slide-img {
-  background-image: url("images/venus.png");
+  background-image: url("venus.png");
 }
 
 .swiper-slide:nth-child(3) .slide-img {
-  background-image: url("images/earth1.png");
+  background-image: url("earth1.png");
 }
 
 .swiper-slide:nth-child(4) .slide-img {
-  background-image: url("images/mars.png");
+  background-image: url("mars.png");
 }
 
 .swiper-slide:nth-child(5) .slide-img {
-  background-image: url("images/jupiter.png");
+  background-image: url("jupiter.png");
 }
 
 .swiper-slide:nth-child(6) .slide-img {
-  background-image: url("images/saturn.png");
+  background-image: url("saturn.png");
 }
 
 .swiper-slide:nth-child(7) .slide-img {
-  background-image: url("images/uranus.png");
+  background-image: url("uranus.png");
 }
 
 .swiper-slide:nth-child(8) .slide-img {
-  background-image: url("images/neptune.png");
+  background-image: url("neptune.png");
 }
 
 .slide-img {
