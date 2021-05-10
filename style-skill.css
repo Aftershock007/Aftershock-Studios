@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('http://fonts.cdnfonts.com/css/alphacentauri');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 * {
   box-sizing: border-box;
@@ -41,13 +42,15 @@ section {
 }
 
 .text h1 {
-  font-family: "AlphaCentauri" !important;
+  /* font-family: "AlphaCentauri" !important; */
   font-size: 5vw;
   color: #fff;
   letter-spacing: 20px;
   position: absolute;
   top: 34vh;
   left: 35vw;
+  font-family: 'Pangolin',
+    cursive;
 }
 
 .earth img {
