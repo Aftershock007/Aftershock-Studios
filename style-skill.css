@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('http://fonts.cdnfonts.com/css/alphacentauri');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,8 +9,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Roboto',
-    sans-serif;
+  /* font-family: 'Roboto',
+    sans-serif; */
   list-style: none;
   box-sizing: border-box;
   background: #000;
