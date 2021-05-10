@@ -351,7 +351,7 @@ section {
   }
 
   .earth img {
-    left: 18vw;
+    left: 10vw;
     top: 22vh;
   }
 
@@ -432,7 +432,7 @@ section {
 
   .swipe {
     display: inline-block;
-    margin-top: 52%;
+    margin-top: 49%;
     margin-left: 40%;
     color: #fff;
     font-size: 1.3em;

@@ -954,3 +954,13 @@ body {
     margin-top: -50px;
     color: #276baf;
 }
+
+@media (max-width :500px) {
+    .text-h {
+        display: none;
+    }
+
+    .plane__wings .wings__top .cuboid--wings-top .mail {
+        margin-left: 132%;
+    }
+}
